@@ -11,3 +11,11 @@ except:
         return a
     def give(a):# np.ndarry -> np.ndarray
         return a
+def iscp(a):
+    if isinstance(a, cp.ndarray):
+        return True
+    return False
+def isnp(a):
+    if isinstance(a, np.ndarray):
+        return True
+    return False
