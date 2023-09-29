@@ -1,0 +1,10 @@
+[project]
+name = "powerhouse"
+version = "0.0.01"
+requires-python = ">=3.7"
+dependencies = [
+]
+
+[build-system]
+requires = ["setuptools>=43.0.0"]
+build-backend = "setuptools.build_meta"
