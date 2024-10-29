@@ -1,8 +1,15 @@
+import numpy as np
+
+try:
+    import cupy as ph
+except:
+    import numpy as ph
+
 # Returns a given array as a powerhouse array
 def aspha(a):
-    if isinstance(a, powerhouse.ndarray):
+    if isinstance(a, ph.ndarray):
         return a
-    return powerhouse.asarray(a)
+    return ph.asarray(a)
 
 # Returns a given array as a numpy array
 def asnpa(a):
