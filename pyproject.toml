@@ -4,7 +4,6 @@ version = "0.0.01"
 requires-python = ">=3.7"
 dependencies = [
 	"numpy",
-	"cython",
 ]
 
 [build-system]
