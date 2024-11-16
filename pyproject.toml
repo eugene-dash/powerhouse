@@ -6,6 +6,13 @@ dependencies = [
 	"numpy",
 ]
 
+[project.optional-dependencies]
+cupy = ["cupy"]
+jax_over_numpy = ["jax"]
+jax_over_cupy = ["jax", "cupy"]
+jax_gpu = ["jax[cuda]", "jax[rocm]"]
+jax_tpu = ["jax[tpu]"]
+
 [build-system]
 requires = ["setuptools>=43.0.0"]
 build-backend = "setuptools.build_meta"
